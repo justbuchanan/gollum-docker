@@ -3,7 +3,7 @@
 FROM justbuchanan/docker-archlinux
 MAINTAINER Justin Buchanan <justbuchanan@gmail.com>
 
-RUN pacman -S --noconfirm ruby base-devel icu cmake
+RUN pacman -Sy --noconfirm ruby base-devel icu cmake
 
 # Configure home and gem path for user dev
 # TODO: don't hardcode version
